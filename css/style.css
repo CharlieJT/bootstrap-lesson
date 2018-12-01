@@ -255,7 +255,7 @@ body {
 }
 
 .quotes-name {
-    font-size: 12px;
+	font-size: 12px;
 }
 
 .quote-section {
@@ -339,15 +339,6 @@ body {
 	.jumbotron {
 		top: 45px;
 	}
-}
-
-@media (max-width:350px) {
-	.jumbotron {
-		top: 75px;
-	}
-}
-
-@media (max-width:767px) {
 	.navbar-default .navbar-nav>.active>a,
 	.navbar-default .navbar-nav>.active>a:focus,
 	.navbar-default .navbar-nav>.active>a:hover {
@@ -369,6 +360,11 @@ body {
 		margin: 25px 0px;
 		font-size: 15px;
 	}
+	.jumbotron small {
+		font-size: 55%;
+		font-style: italic;
+		color: #929292;
+	}
 	.callout-button {
 		background-color: #ec5801;
 		color: white;
@@ -379,19 +375,21 @@ body {
 		font-size: 15px;
 		transition: background-color 0.15s ease-in;
 	}
-	.jumbotron small {
-		font-size: 55%;
-		font-style: italic;
-		color: #929292;
-	}
 }
 
 @media (max-width:350px) {
+	.jumbotron {
+		top: 75px;
+	}
 	.jumbotron h1 {
 		font-size: 25px;
 	}
 	.jumbotron .lead {
 		font-size: 14px;
+	}
+
+	.jumbotron small {
+		font-size: 50%;
 	}
 	.callout-button {
 		background-color: #ec5801;
@@ -402,8 +400,5 @@ body {
 		height: 36px;
 		font-size: 13px;
 		transition: background-color 0.15s ease-in;
-	}
-	.jumbotron small {
-		font-size: 50%;
 	}
 }
